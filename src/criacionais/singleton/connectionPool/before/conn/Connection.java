@@ -1,4 +1,4 @@
-package criacionais.singleton.connectionPool.conn;
+package criacionais.singleton.connectionPool.before.conn;
 
 public class Connection {
 private boolean inUse;

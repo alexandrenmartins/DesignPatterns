@@ -1,7 +1,7 @@
-package criacionais.singleton.connectionPool;
+package criacionais.singleton.connectionPool.before;
 
-import criacionais.singleton.connectionPool.conn.Connection;
-import criacionais.singleton.connectionPool.conn.ConnectionPool;
+import criacionais.singleton.connectionPool.before.conn.Connection;
+import criacionais.singleton.connectionPool.before.conn.ConnectionPool;
 
 public class Client {
 	public static void doQuery1() {
@@ -29,5 +29,7 @@ public class Client {
 		doQuery1();
 		doQuery2();
 		doQuery3();
+		
+		//3 connections was made, even with 2 connections limit
 	}
 }
