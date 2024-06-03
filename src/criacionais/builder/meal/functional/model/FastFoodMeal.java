@@ -1,6 +1,4 @@
-package br.com.cod3r.builder.meal.functional.model;
-
-import br.com.cod3r.builder.meal.functional.model.FastFoodMeal;
+package criacionais.builder.meal.functional.model;
 
 public class FastFoodMeal {
 
@@ -9,7 +7,7 @@ public class FastFoodMeal {
 	final private String side;
 	final private String dessert;
 	final private String gift;
-	
+
 	public FastFoodMeal(String drink, String main, String side, String dessert, String gift) {
 		this.drink = drink;
 		this.main = main;
@@ -43,17 +41,17 @@ public class FastFoodMeal {
 		return "FastFoodMeal [drink=" + drink + ", main=" + main + ", side=" + side + ", dessert=" + dessert + ", gift="
 				+ gift + "]";
 	}
-	
+
 	public static class Builder {
-		//Mandatory
+		// Mandatory
 		private String side;
-		
-		//Optionals
+
+		// Optionals
 		private String drink;
 		private String main;
 		private String dessert;
 		private String gift;
-		
+
 		public Builder(String side) {
 			this.side = side;
 		}
@@ -62,7 +60,7 @@ public class FastFoodMeal {
 			this.drink = drink;
 			return this;
 		}
-		
+
 		public Builder andMain(String main) {
 			this.main = main;
 			return this;
@@ -77,7 +75,7 @@ public class FastFoodMeal {
 			this.gift = gift;
 			return this;
 		}
-		
+
 		public FastFoodMeal thatsAll() {
 			return new FastFoodMeal(drink, main, side, dessert, gift);
 		}
