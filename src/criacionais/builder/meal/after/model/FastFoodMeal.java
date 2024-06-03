@@ -1,4 +1,4 @@
-package br.com.cod3r.builder.meal.after.model;
+package criacionais.builder.meal.after.model;
 
 public class FastFoodMeal {
 
@@ -7,7 +7,7 @@ public class FastFoodMeal {
 	private String side;
 	private String dessert;
 	private String gift;
-	
+
 	public String getDrink() {
 		return drink;
 	}
@@ -50,7 +50,7 @@ public class FastFoodMeal {
 
 	@Override
 	public String toString() {
-		return "Combo [drink=" + drink + ", main=" + main + ", side=" 
+		return "Combo [drink=" + drink + ", main=" + main + ", side="
 				+ side + ", dessert=" + dessert + ", gift=" + gift + "]";
 	}
 }

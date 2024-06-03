@@ -1,7 +1,7 @@
-package br.com.cod3r.builder.meal.after.director;
+package criacionais.builder.meal.after.director;
 
-import br.com.cod3r.builder.meal.after.builder.FastFoodMealBuilder;
-import br.com.cod3r.builder.meal.after.model.FastFoodMeal;
+import criacionais.builder.meal.after.builder.FastFoodMealBuilder;
+import criacionais.builder.meal.after.model.FastFoodMeal;
 
 public class MealDirector {
 
@@ -10,7 +10,7 @@ public class MealDirector {
 	public MealDirector(FastFoodMealBuilder builder) {
 		this.builder = builder;
 	}
-	
+
 	public void constructCombo() {
 		builder.buildDrink();
 		builder.buildMain();
@@ -18,7 +18,7 @@ public class MealDirector {
 		builder.buildDessert();
 		builder.buildGift();
 	}
-	
+
 	public FastFoodMeal getCombo() {
 		return builder.getMeal();
 	}
